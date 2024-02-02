@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sementic</title>
+    <style>
+      * {
+        margin: 0;
+        height: 100%;
+      }
+      header {
+        background-color: pink;
+        height: 100px;
+        text-align: center;
+      }
+      main {
+        background-color: blue;
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: gray;
+      }
+      article {
+        background-color: red;
+      }
+      aside {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 시멘틱 웹 : 의미적으로 컴퓨터가 이해할 수 있도록 구성한 웹페이지 -->
+    <!-- 웹 페이지를 만든다면 중첩을 많이 사용하게됨 -> 해당 태그의 역할을 알기 어려워짐 -->
+    <!-- 시멘틱 태그를 사용할 경우 해당 태그의 역할을 쉽게 알 수 있음 -->
+    <!-- 유지보수가 쉬워짐 -->
+    <!-- 개발자 입장에서도 시멘틱한 태그를 잘 사용한 웹이 유지보수하기 쉽지만 컴퓨터 입장에서도 해당 요소가  -->
+    <!-- 시멘틱한 태그를 잘 사용한 경우 웹 상에서 검색 엔진 최적화까지 할 수 있음 -->
+
+    <header>
+      <!-- nav 태그는 header 내부에 위치하거나 aside 내부 또는 aside  대신 사용되기도 함 -->
+      header
+      <nav></nav>
+    </header>
+    <main>
+      main
+      <section>
+        section
+        <!-- section  태그 article을 포함하는 영역 -->
+        <article>a</article>
+        <article>a</article>
+        <article>a</article>
+        <article>a</article>
+        <article>a</article>
+      </section>
+      <!-- aside 태그는 옆에 위치하는 공간 (광고, 메뉴구성 등 자유롭게 사용) -->
+      <aside>aside</aside>
+    </main>
+    <footer>
+      <!-- footer 태그는 사이트 최하단에 위치하는 공간 -->
+    </footer>
+  </body>
+</html>
