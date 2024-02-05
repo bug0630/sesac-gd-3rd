@@ -1,0 +1,10 @@
+@import url(./01_import.css);
+/* import 방식은 css 파일에서 다른 css 파일을 불러오는 것 */
+p {
+  background-color: red;
+  color: white;
+}
+h3 {
+  background-color: white;
+  color: white;
+}

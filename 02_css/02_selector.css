@@ -1,0 +1,12 @@
+/* 전체 선택자 */
+.red {
+  background-color: red;
+}
+/* 태그 선택자 */
+/* 태그명 { 속성: 속성값;} */
+/* 해당 태그가 사용된 모든 요소 선택 */
+#li-orange {
+  background-color: orange;
+}
+/* id 선택자 */
+/* html 내에서 해당 선택자는 하나만 사용해야함 */
