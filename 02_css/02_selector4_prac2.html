@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prac</title>
+    <style>
+      form {
+        width: 400px;
+      }
+      /* hover */
+
+      /* focus */
+      textarea {
+        width: 100%;
+      }
+      /* checked */
+
+      /* active */
+      button {
+        float: right;
+        padding: 5px 15px;
+        background-color: #f96666;
+        color: white;
+        font-size: 17px;
+        border-radius: 10px;
+        border: none;
+      }
+      button:hover {
+        background-color: gray;
+        color: red;
+      }
+      h3:hover {
+        color: red;
+        background-color: green;
+      }
+      .red:hover {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label>
+        <h3>건의 사항을 적어주세요!</h3>
+        <textarea id="textarea" placeholder="건의 사항"></textarea>
+      </label>
+      <input type="checkbox" id="red" />
+      <label for="red"><span class="red">빨강</span></label>
+      <input type="checkbox" id="blue" />
+      <label for="blue">파랑</label>
+      <input type="checkbox" id="yellow" />
+      <label for="yellow">노랑</label>
+      <button>제출</button>
+    </form>
+  </body>
+</html>

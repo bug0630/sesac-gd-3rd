@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prac</title>
+    <style>
+      .orange-box {
+        width: auto;
+        height: 200px;
+        background-color: orange;
+      }
+      .html {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        background-color: skyblue;
+      }
+      .css {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        background-color: green;
+      }
+      .javascript {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        background-color: red;
+      }
+      /* max-width, min-width */
+      .parents {
+        width: 1000px;
+        height: 200px;
+        background-color: pink;
+      }
+      .min {
+        /* 최소 넓이이므로 400px보다 늘어날 수 있지만 줄어들 수 없다 */
+        min-width: 400px;
+        height: 100px;
+        background-color: purple;
+      }
+      .max {
+        /* 최대 넓이이므로 400px보다 줄어들 수 있지만 늘어날 수 없음 */
+        max-width: 400px;
+        height: 100px;
+        background-color: rgb(255, 176, 255);
+      }
+      /* height도 마찬가지 */
+      /* 하지만 max-width와 min-width, max-height, min-height는 주로 반응형을 
+      위한 웹 페이지에서 사용되기 때문에 width 기반으로 많이 쓰임 */
+    </style>
+  </head>
+  <body>
+    <div class="orange-box">
+      <span class="html">html</span>
+      <span class="css">css</span>
+      <span class="javascript">javascript</span>
+    </div>
+    <br />
+    <hr />
+    <h2>max-width, min-width</h2>
+    <div class="parents">
+      <div class="min"></div>
+      <div class="max"></div>
+    </div>
+  </body>
+</html>

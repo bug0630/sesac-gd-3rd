@@ -1,0 +1,114 @@
+body {
+  font-family: "Gothic A1", sans-serif;
+}
+
+.px {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+/* em : 부모 요소의 font-size가 기준 ->사용 시 주의 필요 */
+/* 부모 요소의 font-size를 받아오기 때문에 점점 커짐 */
+.em-text {
+  font-size: 2em;
+}
+/* rem : root(html)의 font-size가 기준 ->중첩되어도 영향이 없음 */
+/* html의 font-size를 지정하지 않으면 기본적으로 1rem = 16px */
+.rem-text {
+  font-size: 2rem;
+}
+.rem-parents {
+  font-size: 30px;
+  background-color: lightgoldenrodyellow;
+}
+.percent {
+  /*자동으로너비 변경됨  */
+  width: 50%;
+  background-color: palevioletred;
+}
+.percent-parents {
+  background-color: rgb(112, 129, 144);
+  width: 300px;
+}
+.vh {
+  width: 30vw;
+  height: 30vh;
+  background-color: chocolate;
+}
+.vw {
+  width: 30vw;
+  height: 130vh;
+  background-color: rgb(235, 212, 195);
+}
+.d-block {
+  /* display:block; -> div 요소의 기본 속성값 */
+  background-color: antiquewhite;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.d-inline {
+  /* display : inline; -> span 요소의 default 속성값 */
+  background-color: gray;
+  border: 1px solid darkblue;
+}
+/* inline 요소는 컨텐트 크기에 딱 맞춰 너비와 높이가 지정되므로 width, height 속성 지정 불가 */
+/* width 100px; height100px;  */
+.d-inline-block {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  /* block 요소처럼 width 와  height를 지정 할 수 있음 */
+  /* inline 요소처럼 content 크기에 딱 맞도록 기본 크기 자동 지정 */
+}
+.header {
+  background-color: aqua;
+  height: 200px;
+}
+.calc {
+  width: calc(100vw - 300px);
+  height: calc(100vh - 130px);
+  background-color: yellow;
+}
+/* border & border-radious */
+.border {
+  border: 1px solid black;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: blue;
+  border-right: 3px solid green;
+  /* 굵기(border-width), 스타일 (border-style), 색상(border-color) */
+  height: 100px;
+}
+.rounded {
+  border: 5px solid pink;
+  border-radius: 10px 0 30px 50px;
+  height: 100px;
+  background-color: bisque;
+}
+/* margin & padding의 단축속성 */
+/* margin */
+/* inline의 margin은 좌우만 가능 */
+/* margin과 padding은 실제 레이아웃에 영향을 미치지 않아 레이아웃이 깨질 수 있음 */
+/* margin: 50px;
+padding:30px; */
+
+/* box-sizing */
+/* 요소의 크기 계산 기준을 지정하는 속성 */
+.content-box {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border: 15px solid purple;
+  background-color: red;
+}
+.border-box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 15px solid rgb(225, 141, 225);
+  padding: 20px;
+  box-sizing: border-box;
+}

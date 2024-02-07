@@ -4,8 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calender</title>
+    <style>
+      body {
+        background-color: rgb(245, 245, 194);
+      }
+      h2 {
+        text-align: center;
+        color: green;
+      }
+      table {
+        width: 1000px;
+        text-align: center;
+        margin: auto;
+      }
+      tr {
+        height: 50px;
+      }
+      th:nth-of-type(1) {
+        color: red;
+      }
+      th:nth-last-child(1) {
+        color: blue;
+      }
+      td:nth-of-type(1) {
+        color: red;
+      }
+      td:nth-last-child(1) {
+        color: blue;
+      }
+      tr:nth-of-type(3) > td:nth-of-type(6) {
+        color: red;
+      }
+      tr:nth-of-type(3) > td:nth-of-type(7) {
+        color: red;
+      }
+      tr:nth-of-type(4) > td:nth-of-type(2) {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <h2>2024년 2월</h2>
+    <table>
+      <tr>
+        <th>일</th>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+        <th>토</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
   </body>
 </html>

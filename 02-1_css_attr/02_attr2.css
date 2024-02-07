@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "OG_Renaissance_Secret-Rg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/OG_Renaissance_Secret-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Gothic A1", sans-serif;
+}
+.google {
+  font-family: "OG_Renaissance_Secret-Rg" sans-serif;
+}
+/* 모든 폰트의 지정-> 전체 선택자 사용 */
+/* font-family:  'OG_Renaissance_Secret-Rg' sans-serif; */
+.sentence {
+  font-family: sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: line-through;
+  /* 줄간 간격 조정 */
+  /* 대체로 배수를 나타내는 단위 없는 것을 사용 */
+  line-height: 1;
+  /* 글씨체마다 제공되는 font-weight 값이 모두 제각각이기 때문에 모든 값이 적용되는 것은 아님 */
+}
+.line-height {
+  border: 1px solid gray;
+  height: 100px;
+  line-height: 100px;
+  overflow: hidden;
+  /* px값 지정 시 한 줄의 높이가 해당 px로 지정되고 세로 가운데 정렬 */
+}
+.opacity {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  /* opacity: 투명도 (0~1 사이의 소수점 숫자 작성); */
+  /*  */
+}
+.text-container {
+  width: 500px;
+  height: 200px;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+/* overflow : content가 내부의 요소가 넘쳤을 때의 처리 지정 */
+.overflow-container {
+  height: 300px;
+  overflow: scroll;
+}
+/* scroll은 content가 넘치지 않아도 scroll 생김 */
+.overflow-visible {
+  height: 50px;
+  overflow: visible;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* overflow:visible 기본값 */
+/* 단축속성 가능 */
