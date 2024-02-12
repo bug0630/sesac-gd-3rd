@@ -34,8 +34,14 @@
         color: red;
         background-color: green;
       }
-      .red:hover {
+      #red:checked + label .red {
         background-color: red;
+      }
+      #blue:checked + label .blue {
+        background-color: blue;
+      }
+      #yellow:checked + label .yellow {
+        background-color: yellow;
       }
     </style>
   </head>
@@ -48,9 +54,9 @@
       <input type="checkbox" id="red" />
       <label for="red"><span class="red">빨강</span></label>
       <input type="checkbox" id="blue" />
-      <label for="blue">파랑</label>
+      <label for="blue"><span class="blue">파랑</span></label>
       <input type="checkbox" id="yellow" />
-      <label for="yellow">노랑</label>
+      <label for="yellow"><span class="yellow">노랑</span></label>
       <button>제출</button>
     </form>
   </body>
