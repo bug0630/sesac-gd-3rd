@@ -1,12 +1,17 @@
 body {
   height: 2000px;
 }
+header {
+  position: sticky;
+  top: 0;
+}
 .header_inner {
   font-size: 14px;
   position: relative;
 }
 .header_top {
   border-bottom: 1px solid rgb(208, 208, 208);
+  font-size: 14px;
 }
 .top_width {
   margin: auto;
@@ -51,6 +56,7 @@ body {
   border-bottom: 1px solid rgb(208, 208, 208);
   font-size: 16px;
   font-weight: 700;
+  box-shadow: 0 2px rgb(230, 230, 230);
 }
 .bottom_width {
   height: 64px;
@@ -77,25 +83,27 @@ h1 img {
   color: green;
 }
 #search {
-  width: 400px;
+  width: 500px;
   height: 34px;
+  margin-right: 20px;
   border-radius: 10px;
   background: url(img/search.png) no-repeat center right 10px;
   background-size: 20px;
   background-color: rgb(241, 241, 241);
   border: none;
 }
-#search:hover {
-  border: 1px solid black;
-}
 #search:focus {
   outline: 2px solid rgb(0, 210, 0);
 }
+#search:not(#search:focus):hover {
+  border: 1px solid black;
+}
 .btn {
   margin-right: 36px;
-  width: 150px;
+  width: 130px;
   display: flex;
-  justify-content: space-evenly;
+  flex-shrink: 0;
+  justify-content: space-between;
 }
 #primary {
   background-color: white;
