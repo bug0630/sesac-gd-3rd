@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediaquery</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .media {
+        background-color: pink;
+      }
+      .header-mobile {
+        display: none;
+      }
+      .img-container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+      }
+      .img-container img {
+        width: 80vw;
+      }
+      /* 화면의 너비가 최대 800px일 때 적용-> 800px보다 좁을 때 적용됨 */
+      @media screen and (max-width: 800px) {
+        .media {
+          background-color: gold;
+          width: 800px;
+        }
+        .header-mobile {
+          display: block;
+        }
+        .header-nomal {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .media {
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="media">mediaquery</div>
+    <hr />
+    <header class="header-nomal">웹, 태블릿 헤더</header>
+    <header class="header-mobile">모바일 헤더</header>
+    <div class="img-container">
+      <img
+        src="img/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a.png"
+        alt="lion"
+      />
+      <img
+        src="img/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a.png"
+        alt="lion"
+      />
+      <img
+        src="img/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a.png"
+        alt="lion"
+      />
+    </div>
+  </body>
+</html>
